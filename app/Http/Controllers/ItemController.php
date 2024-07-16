@@ -15,6 +15,7 @@ class ItemController extends Controller
      *     path="/api/items",
      *     summary="List all items",
      *     @OA\Response(response="200", description="An Items list"),
+     *    @OA\Response(response="404", description="No items found"),
      * )
      */
     public function index()
