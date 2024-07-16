@@ -19,8 +19,9 @@ class ItemController extends Controller
      */
     public function index()
     {
+        \Log::info('Items index route hit');
         $items = Item::all();
-        return response()->json($items);
+        return response()->json(['data' => $items], 200);
     }
 
     /**
